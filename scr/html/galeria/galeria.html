@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Imagens - Natureza em Foco</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Natureza em Foco</h1>
+        <p>Uma coleção de imagens inspiradoras do mundo natural.</p>
+        <nav>
+            <button class="menu-hamburguer" aria-label="Abrir menu de navegação">☰</button>
+            <ul class="menu-principal">
+                <li><a href="../../../index.html">Início</a></li>
+                <li><a href="../sobre nos.html">Sobre</a></li>
+                <li><a href="../contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h2 class="titulo-galeria">Nossa Galeria</h2>
+        <p class="descricao-galeria">
+            Explore a beleza dos biomas do nosso planeta através das lentes da nossa equipe.
+        </p>
+
+        <div class="galeria-fotos">
+            <img src="../img/montanhas 2.jpg" alt="Picos de montanhas nevadas">
+            <img src="../img/rios 2.jpg" alt="Rio sinuoso visto de cima">
+            <img src="../img/deserto 2.jpg" alt="Pôr do sol em um deserto com dunas">
+            <img src="../img/fungos 2.jpg" alt="Vários tipos de cogumelos na floresta">
+            <img src="../img/oceano 2.jpg" alt="Recife de coral vibrante debaixo d'água">
+            <img src="../img/estacoes 2.jpg" alt="Árvores em tons de outono">
+
+            <img src="../../img/deserto.jpg" alt="Cacto em um deserto ao pôr do sol">
+            <img src="../../img/estacoes.jpg" alt="Paisagem de outono com árvores coloridas">
+            <img src="../../img/floresta.jpg" alt="Caminho em uma floresta tropical">
+            <img src="../../img/fungos.jpg" alt="Fungo crescendo em um tronco de árvore">
+            <img src="../../img/montanhas.jpg" alt="Montanha coberta de neve">
+            <img src="../../img/oceano.jpg" alt="Praia com ondas do oceano">
+            <img src="../../img/passaros.jpg" alt="Pássaro colorido em um galho">
+            <img src="../../img/rios.jpg" alt="Vista aérea de um rio com vegetação">
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Natureza em Foco. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+    const menuBtn = document.querySelector('.menu-hamburguer');
+    const menuList = document.querySelector('.menu-principal');
+    const cabecalho = document.querySelector('.cabecalho');
+
+    // Ações ao clicar no botão hambúrguer
+    menuBtn.addEventListener('click', () => {
+        // Adiciona ou remove a classe 'aberto' para deslizar o menu
+        menuList.classList.toggle('aberto');
+    });
+
+    // Se quiser, você pode adicionar uma ação para fechar o menu ao clicar em um link
+    menuList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuList.classList.remove('aberto');
+        });
+    });
+</script>
+
+</body>
+</html>
