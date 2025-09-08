@@ -1,0 +1,23 @@
+/* home.css */
+
+.cabecalho, .rodape, .botao-enviar {
+    background-color: #5A8D6E; /* Verde-sálvia suave */
+}
+
+.menu-principal a:hover,
+.botao-enviar:hover {
+    background-color: #C4A484; /* Ocre para o hover */
+    color: #2F4858;
+}
+
+.titulo-post,
+.ler-mais,
+.redes-sociais h3,
+.social-link {
+    color: #2F4858; /* Azul escuro para textos de destaque */
+}
+
+.ler-mais:hover,
+.social-link:hover {
+    color: #A42A0D; /* Terracota para o hover */
+}
