@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observando Pássaros - Natureza em Foco</title>
+    <link rel="stylesheet" href="css/passaros.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Natureza em Foco</h1>
+        <p>Explorando a beleza e os mistérios do mundo natural.</p>
+        <nav>
+            <button class="menu-hamburguer" aria-label="Abrir menu de navegação">☰</button>
+            <ul class="menu-principal">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="sobre nos.html">Sobre</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+                <li><a href="galeria/galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <h2 class="titulo-post">Observando Pássaros: Um Guia para Iniciantes</h2>
+            <p class="data-post">Publicado em 15 de agosto de 2025 por Maria Oliveira</p>
+            <img src="img/passaros 2.jpg" alt="Imagem de um pássaro em uma árvore" class="imagem-post">
+            <p class="conteudo-post">
+                A observação de pássaros, ou "birdwatching", é um hobby relaxante e gratificante. Não é preciso ir longe para começar; a sua própria janela ou quintal já pode ser o ponto de partida. Conheça as dicas essenciais para identificar as aves locais e se conectar com a vida selvagem ao seu redor.
+            </p>
+            <p class="conteudo-post">
+                <strong>O que você precisa:</strong> A boa notícia é que você não precisa de equipamentos caros. Um par de binóculos de qualidade mediana já é um ótimo começo. Um caderno e uma caneta para anotações e um guia de campo sobre as aves da sua região também são ferramentas valiosas.
+            </p>
+            <p class="conteudo-post">
+                <strong>Dicas para começar:</strong> Comece observando as aves que visitam o seu quintal ou um parque próximo. Tente ser paciente e silencioso. Observe as cores, o tamanho, a forma do bico e os padrões de voo. Anote a hora e o local da sua observação.
+            </p>
+            <p class="conteudo-post">
+                <strong>Aprenda a identificar:</strong> Existem aplicativos e sites que podem te ajudar a identificar as aves com base em suas características e vocalizações. Conectar-se a grupos locais de observadores de pássaros também é uma ótima maneira de aprender com pessoas mais experientes. Aproveite para se reconectar com a natureza e descobrir um novo mundo de beleza e som.
+            </p>
+            <a href="../../index.html" class="ler-mais">Voltar para a página inicial</a>
+        </article>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Natureza em Foco. Todos os direitos reservados.</p>
+        <p class="versao">Versão: v2.3</p>
+    </footer>
+
+    <script>
+    const menuBtn = document.querySelector('.menu-hamburguer');
+    const menuList = document.querySelector('.menu-principal');
+    const cabecalho = document.querySelector('.cabecalho');
+
+    // Ações ao clicar no botão hambúrguer
+    menuBtn.addEventListener('click', () => {
+        // Adiciona ou remove a classe 'aberto' para deslizar o menu
+        menuList.classList.toggle('aberto');
+    });
+
+    // Se quiser, você pode adicionar uma ação para fechar o menu ao clicar em um link
+    menuList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuList.classList.remove('aberto');
+        });
+    });
+</script>
+
+</body>
+</html>

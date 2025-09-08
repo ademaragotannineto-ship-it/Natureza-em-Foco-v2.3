@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Importância das Florestas Tropicais - Natureza em Foco</title>
+    <link rel="stylesheet" href="css/florestas.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Natureza em Foco</h1>
+        <p>Explorando a beleza e os mistérios do mundo natural.</p>
+        <nav>
+            <button class="menu-hamburguer" aria-label="Abrir menu de navegação">☰</button>
+            <ul class="menu-principal">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="sobre nos.html">Sobre</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+                <li><a href="galeria/galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <h2 class="titulo-post">A Importância das Florestas Tropicais</h2>
+            <p class="data-post">Publicado em 19 de agosto de 2025 por João Silva</p>
+            <img src="img/floresta 2.jpg" alt="Imagem de uma floresta tropical" class="imagem-post">
+            <p class="conteudo-post">
+                As florestas tropicais são os pulmões do nosso planeta. Elas abrigam uma biodiversidade incrível e desempenham um papel vital na regulação do clima global. Neste post, vamos mergulhar nos ecossistemas mais ricos da Terra e entender por que a sua preservação é crucial para o nosso futuro.
+            </p>
+            <p class="conteudo-post">
+                <strong>Biodiversidade Incomparável:</strong> Embora cubram apenas cerca de 6% da superfície terrestre, as florestas tropicais abrigam mais da metade das espécies de plantas e animais do mundo. Essa vasta riqueza biológica é uma fonte de recursos genéticos, medicinas e inspiração para a ciência. A Amazônia, por exemplo, é o lar de milhões de espécies, muitas das quais ainda não foram descobertas ou catalogadas.
+            </p>
+            <p class="conteudo-post">
+                <strong>Regulação Climática:</strong> As árvores das florestas tropicais atuam como gigantescos purificadores de ar, absorvendo grandes quantidades de dióxido de carbono da atmosfera e liberando oxigênio. Esse processo, conhecido como sequestro de carbono, é fundamental para combater as mudanças climáticas e manter a temperatura global estável.
+            </p>
+            <p class="conteudo-post">
+                <strong>Impacto na Vida Humana:</strong> Milhões de pessoas em todo o mundo dependem das florestas tropicais para sua subsistência, incluindo comunidades indígenas que vivem em harmonia com esses ecossistemas há milênios. A destruição das florestas não apenas ameaça a vida selvagem, mas também o modo de vida e a cultura dessas populações. A proteção das florestas tropicais é uma responsabilidade global, essencial para a saúde do nosso planeta e de todos os seus habitantes.
+            </p>
+            <a href="../../index.html" class="ler-mais">Voltar para a página inicial</a>
+        </article>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Natureza em Foco. Todos os direitos reservados.</p>
+        <p class="versao">Versão: v2.3</p>
+    </footer>
+
+    <script>
+    const menuBtn = document.querySelector('.menu-hamburguer');
+    const menuList = document.querySelector('.menu-principal');
+    const cabecalho = document.querySelector('.cabecalho');
+
+    // Ações ao clicar no botão hambúrguer
+    menuBtn.addEventListener('click', () => {
+        // Adiciona ou remove a classe 'aberto' para deslizar o menu
+        menuList.classList.toggle('aberto');
+    });
+
+    // Se quiser, você pode adicionar uma ação para fechar o menu ao clicar em um link
+    menuList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuList.classList.remove('aberto');
+        });
+    });
+</script>
+
+</body>
+</html>

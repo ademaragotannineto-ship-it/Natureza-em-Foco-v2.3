@@ -1,0 +1,22 @@
+/* contatos.css */
+
+.cabecalho, .rodape, .botao-enviar {
+    background-color: #1E4F8F; /* Azul marinho */
+}
+
+.menu-principal a:hover,
+.botao-enviar:hover {
+    background-color: #3870B7; /* Azul claro para o hover */
+}
+
+.titulo-post,
+.ler-mais,
+.redes-sociais h3,
+.social-link {
+    color: #1E4F8F;
+}
+
+.ler-mais:hover,
+.social-link:hover {
+    color: #3870B7;
+}

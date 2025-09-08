@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Ciclo das Estações - Natureza em Foco</title>
+    <link rel="stylesheet" href="css/estacoes.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Natureza em Foco</h1>
+        <p>Explorando a beleza e os mistérios do mundo natural.</p>
+        <nav>
+            <button class="menu-hamburguer" aria-label="Abrir menu de navegação">☰</button>
+            <ul class="menu-principal">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="sobre nos.html">Sobre</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+                <li><a href="galeria/galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <h2 class="titulo-post">O Ciclo das Estações e sua Influência na Natureza</h2>
+            <p class="data-post">Publicado em 05 de agosto de 2025 por Pedro Santos</p>
+            <img src="img/estacoes 2.jpg" alt="Imagem de uma paisagem em mudança ao longo das estações" class="imagem-post">
+            <p class="conteudo-post">
+                As estações do ano são um espetáculo da natureza, impulsionadas pela inclinação do eixo da Terra. Elas influenciam a vida, a paisagem e o comportamento de todos os seres vivos.
+            </p>
+            <p class="conteudo-post">
+                <strong>Primavera e o Despertar:</strong> A primavera é a estação do renascimento. Com o aumento das horas de luz solar e o aquecimento das temperaturas, as plantas florescem, os animais saem da hibernação e o mundo natural se enche de cor e vida.
+            </p>
+            <p class="conteudo-post">
+                <strong>Verão e a Abundância:</strong> O verão traz dias longos e quentes. É a época de maior atividade para a vida selvagem, com alimento e água abundantes. As florestas estão no auge do seu verde e os campos de flores estão em plena floração.
+            </p>
+            <p class="conteudo-post">
+                <strong>Outono e a Preparação:</strong> O outono marca uma transição. As folhas das árvores mudam de cor e caem, e a vida se prepara para o frio. Muitos animais se alimentam para ganhar peso e estocar comida, enquanto outros iniciam suas longas migrações.
+            </p>
+            <p class="conteudo-post">
+                <strong>Inverno e o Descanso:</strong> O inverno é a estação do repouso. A paisagem pode ser coberta por neve, e a vida parece hibernar sob a superfície. Esse período de descanso é crucial para que a natureza possa se regenerar e se preparar para um novo ciclo de vida.
+            </p>
+            <a href="../../index.html" class="ler-mais">Voltar para a página inicial</a>
+        </article>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Natureza em Foco. Todos os direitos reservados.</p>
+        <p class="versao">Versão: v2.3</p>
+    </footer>
+
+    <script>
+    const menuBtn = document.querySelector('.menu-hamburguer');
+    const menuList = document.querySelector('.menu-principal');
+    const cabecalho = document.querySelector('.cabecalho');
+
+    // Ações ao clicar no botão hambúrguer
+    menuBtn.addEventListener('click', () => {
+        // Adiciona ou remove a classe 'aberto' para deslizar o menu
+        menuList.classList.toggle('aberto');
+    });
+
+    // Se quiser, você pode adicionar uma ação para fechar o menu ao clicar em um link
+    menuList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuList.classList.remove('aberto');
+        });
+    });
+</script>
+
+</body>
+</html>

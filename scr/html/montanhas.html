@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montanhas: Gigantes da Terra - Natureza em Foco</title>
+    <link rel="stylesheet" href="css/montanhas.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Natureza em Foco</h1>
+        <p>Explorando a beleza e os mistérios do mundo natural.</p>
+        <nav>
+            <button class="menu-hamburguer" aria-label="Abrir menu de navegação">☰</button>
+            <ul class="menu-principal">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="sobre nos.html">Sobre</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+                <li><a href="galeria/galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <h2 class="titulo-post">Montanhas: Gigantes da Terra e seus Ecossistemas</h2>
+            <p class="data-post">Publicado em 29 de julho de 2025 por Luana Gouveia</p>
+            <img src="img/montanhas 2.jpg" alt="Imagem de um pico de montanha com neve" class="imagem-post">
+            <p class="conteudo-post">
+                As montanhas são mais do que simples elevações na paisagem. Elas são ecossistemas complexos e diversos que abrigam uma flora e fauna adaptadas a condições extremas.
+            </p>
+            <p class="conteudo-post">
+                <strong>Zonas de Vida:</strong> A vida nas montanhas se organiza em zonas de acordo com a altitude. À medida que se sobe, a temperatura cai e a pressão do ar diminui, o que leva a uma mudança drástica na vegetação, passando de florestas densas para prados alpinos e, finalmente, para picos de rocha e gelo.
+            </p>
+            <p class="conteudo-post">
+                <strong>Biodiversidade Única:</strong> As montanhas são refúgios para muitas espécies endêmicas, que não são encontradas em nenhum outro lugar do planeta. Ursos, leopardos-das-neves e cabras-montesas são exemplos de animais que evoluíram para sobreviver nessas altitudes.
+            </p>
+            <p class="conteudo-post">
+                <strong>Fonte de Água Doce:</strong> As montanhas são muitas vezes chamadas de "caixas d'água" do mundo. Elas capturam a umidade do ar e armazenam-na em geleiras, neve e lagos, fornecendo água doce para milhões de pessoas que vivem nas terras baixas. A preservação desses ecossistemas é vital para o nosso futuro.
+            </p>
+            <a href="../../index.html" class="ler-mais">Voltar para a página inicial</a>
+        </article>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Natureza em Foco. Todos os direitos reservados.</p>
+        <p class="versao">Versão: v2.3</p>
+    </footer>
+
+    <script>
+    const menuBtn = document.querySelector('.menu-hamburguer');
+    const menuList = document.querySelector('.menu-principal');
+    const cabecalho = document.querySelector('.cabecalho');
+
+    // Ações ao clicar no botão hambúrguer
+    menuBtn.addEventListener('click', () => {
+        // Adiciona ou remove a classe 'aberto' para deslizar o menu
+        menuList.classList.toggle('aberto');
+    });
+
+    // Se quiser, você pode adicionar uma ação para fechar o menu ao clicar em um link
+    menuList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuList.classList.remove('aberto');
+        });
+    });
+</script>
+
+</body>
+</html>

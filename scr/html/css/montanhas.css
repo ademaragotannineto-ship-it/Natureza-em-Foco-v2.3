@@ -1,0 +1,20 @@
+.cabecalho, .rodape, .botao-enviar {
+    background-color: #6C819F; /* Cinza-azulado mais claro, com bom contraste */
+}
+
+.menu-principal a:hover,
+.botao-enviar:hover {
+    background-color: #8DA9C4;
+}
+
+.titulo-post,
+.ler-mais,
+.redes-sociais h3,
+.social-link {
+    color: #2E4053;
+}
+
+.ler-mais:hover,
+.social-link:hover {
+    color: #5B7A8B;
+}

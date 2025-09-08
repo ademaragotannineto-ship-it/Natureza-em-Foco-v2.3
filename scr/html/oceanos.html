@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Vida Secreta dos Oceanos - Natureza em Foco</title>
+    <link rel="stylesheet" href="css/oceanos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>Natureza em Foco</h1>
+        <p>Explorando a beleza e os mistérios do mundo natural.</p>
+        <nav>
+            <button class="menu-hamburguer" aria-label="Abrir menu de navegação">☰</button>
+            <ul class="menu-principal">
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="sobre nos.html">Sobre</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+                <li><a href="galeria/galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <article class="post">
+            <h2 class="titulo-post">A Vida Secreta dos Oceanos Profundos</h2>
+            <p class="data-post">Publicado em 10 de agosto de 2025 por Ana Costa</p>
+            <img src="img/oceano 2.jpg" alt="Imagem de um peixe bioluminescente no oceano profundo" class="imagem-post">
+            <p class="conteudo-post">
+                O fundo dos oceanos é um dos últimos grandes mistérios da Terra. Em completa escuridão e sob uma pressão imensa, a vida se adapta de maneiras que desafiam a nossa imaginação.
+            </p>
+            <p class="conteudo-post">
+                <strong>Um Mundo Sem Luz:</strong> A luz solar não consegue penetrar nas profundezas, e a vida nesse ambiente é totalmente independente da fotossíntese. Em vez disso, a energia vem de fontes como fendas hidrotermais, onde a água quente e rica em minerais sustenta ecossistemas únicos.
+            </p>
+            <p class="conteudo-post">
+                <strong>Criaturas Estranhas e Maravilhosas:</strong> Para sobreviver, as criaturas das profundezas evoluíram com características incríveis. Muitos peixes, como o peixe-pescador, usam a bioluminescência para atrair presas em meio à escuridão. Outros, como o peixe-diabo-negro, têm dentes afiados e estômagos expansíveis para engolir qualquer alimento que encontrem.
+            </p>
+            <p class="conteudo-post">
+                <strong>Ameaças Invisíveis:</strong> Mesmo nos lugares mais remotos, a vida marinha enfrenta ameaças como a poluição plástica e as mudanças climáticas, que alteram a química da água. Estudar e proteger os oceanos profundos é fundamental para entender e preservar a biodiversidade global.
+            </p>
+            <a href="../../index.html" class="ler-mais">Voltar para a página inicial</a>
+        </article>
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2025 Natureza em Foco. Todos os direitos reservados.</p>
+        <p class="versao">Versão: v2.3</p>
+    </footer>
+
+    <script>
+    const menuBtn = document.querySelector('.menu-hamburguer');
+    const menuList = document.querySelector('.menu-principal');
+    const cabecalho = document.querySelector('.cabecalho');
+
+    // Ações ao clicar no botão hambúrguer
+    menuBtn.addEventListener('click', () => {
+        // Adiciona ou remove a classe 'aberto' para deslizar o menu
+        menuList.classList.toggle('aberto');
+    });
+
+    // Se quiser, você pode adicionar uma ação para fechar o menu ao clicar em um link
+    menuList.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            menuList.classList.remove('aberto');
+        });
+    });
+</script>
+
+</body>
+</html>
